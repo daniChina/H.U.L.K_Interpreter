@@ -1,0 +1,14 @@
+D:\Carrera\Hulk Interpreter\bin\Debug\net7.0\Hulk Interpreter.exe
+D:\Carrera\Hulk Interpreter\bin\Debug\net7.0\Hulk Interpreter.deps.json
+D:\Carrera\Hulk Interpreter\bin\Debug\net7.0\Hulk Interpreter.runtimeconfig.json
+D:\Carrera\Hulk Interpreter\bin\Debug\net7.0\Hulk Interpreter.dll
+D:\Carrera\Hulk Interpreter\bin\Debug\net7.0\Hulk Interpreter.pdb
+D:\Carrera\Hulk Interpreter\obj\Debug\net7.0\Hulk Interpreter.GeneratedMSBuildEditorConfig.editorconfig
+D:\Carrera\Hulk Interpreter\obj\Debug\net7.0\Hulk Interpreter.AssemblyInfoInputs.cache
+D:\Carrera\Hulk Interpreter\obj\Debug\net7.0\Hulk Interpreter.AssemblyInfo.cs
+D:\Carrera\Hulk Interpreter\obj\Debug\net7.0\Hulk Interpreter.csproj.CoreCompileInputs.cache
+D:\Carrera\Hulk Interpreter\obj\Debug\net7.0\Hulk Interpreter.dll
+D:\Carrera\Hulk Interpreter\obj\Debug\net7.0\refint\Hulk Interpreter.dll
+D:\Carrera\Hulk Interpreter\obj\Debug\net7.0\Hulk Interpreter.pdb
+D:\Carrera\Hulk Interpreter\obj\Debug\net7.0\Hulk Interpreter.genruntimeconfig.cache
+D:\Carrera\Hulk Interpreter\obj\Debug\net7.0\ref\Hulk Interpreter.dll

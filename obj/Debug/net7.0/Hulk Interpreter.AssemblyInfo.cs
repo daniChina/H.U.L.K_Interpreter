@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Hulk_Interpreter")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Hulk Interpreter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Hulk_Interpreter")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Hulk_Interpreter")]
+[assembly: System.Reflection.AssemblyProductAttribute("Hulk Interpreter")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Hulk Interpreter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.

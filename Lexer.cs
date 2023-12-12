@@ -1,149 +1,286 @@
-public class Lexer
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Hulk_Interpreter
 {
-    private string text;
-    private int position;
-    private char currentChar;
-    public List<Token> TokensList { get; }
-
-    public Lexer(string text)
+    public class Lexer
     {
-        this.text = text;
-        this.position = 0;
-       this.currentChar = text[position];
-        TokensList = new List<Token>();
-    }
-    public void Show()
-    {
+        private string text;
+        private int position;
+        private char currentChar;
 
-        foreach (Token item in TokensList)
+        // private Token currentToken ;
+        public List<Token> TokensList = new List<Token>();
+
+        public Lexer(string text)
         {
-            item.Show();
+            this.text = text;
+            this.position = 0;
+            this.currentChar = text[position];
+            //currentToken = null!;
         }
-    }
-
-
-    public void GetNextToken()
-    {
-        while (position < text.Length)
+        public void Show()
         {
 
-            //si es un espacio en blanco salto y continuo el ciclo
-            if (char.IsWhiteSpace(currentChar)) {
-                GetNextPosition();
-                continue;
-            }
-
-            //verificar si es un numero
-            else if (char.IsDigit(currentChar))
+            foreach (Token item in TokensList)
             {
-                string number = " ";
-                while (position < text.Length && char.IsDigit(currentChar))
+                item.Show();
+            }
+        }
+
+        public void GetNextToken()
+        {
+            while (position < text.Length)
+            {
+
+                //si es un espacio en blanco salto y continuo el ciclo
+                if (char.IsWhiteSpace(currentChar))
                 {
-                    number += currentChar;
+                    SkipWhiteSpaces();
+                    continue;
+                }
+
+                //verificar si es un numero
+                else if (char.IsDigit(currentChar))
+                {
+                    string number = " ";
+                    while (position < text.Length && char.IsDigit(currentChar))
+                    {
+                        number += currentChar;
+                        // if (char.IsLetter(LookAhead(1))) System.Console.WriteLine("error de lexico");
+                        GetNextPosition();
+                    }
+                    Token token = new Token(TokenType.Number, double.Parse(number));
+                    TokensList.Add(token);
+
+
+                }//Verificar los operadores
+                else if (currentChar == '+' || currentChar == '-' || currentChar == '*' || currentChar == '/' || currentChar == '%' || currentChar == '@' || currentChar == '^' || currentChar == '&' || currentChar == '|')
+                {
+                    Token token = new Token(TokenType.Operator, currentChar);
+                    TokensList.Add(token);
+                    GetNextPosition();
+
+                }
+                else if (currentChar == '=')
+                {
+                    string s = currentChar.ToString();
+                    if (LookAhead(position, '=', '>'))
+                    {
+                        s += currentChar;
+                        Token token = new Token(TokenType.Operator, s);
+                        TokensList.Add(token);
+                        GetNextPosition();
+                    }
+                    else
+                    {
+                        Token token1 = new Token(TokenType.Operator, s);
+                        TokensList.Add(token1);
+                    }
+                }
+                else if (currentChar == '!')
+                {
+                    string s = currentChar.ToString();
+                    if (LookAhead(position, '='))
+                    {
+                        s += currentChar;
+                        Token token = new Token(TokenType.Operator, s);
+                        TokensList.Add(token);
+                        GetNextPosition();
+                    }
+                    else
+                    {
+                        Token token1 = new Token(TokenType.Operator, s);
+                        TokensList.Add(token1);
+
+                    }
+                }
+                else if (currentChar == '<')
+                {
+                    string s = currentChar.ToString();
+                    if (LookAhead(position, '='))
+                    {
+                        s += currentChar;
+                        Token token = new Token(TokenType.Operator, s);
+                        TokensList.Add(token);
+                        GetNextPosition();
+
+                    }
+                    else
+                    {
+                        Token token1 = new Token(TokenType.Operator, s);
+                        TokensList.Add(token1);
+                    }
+                }
+                else if (currentChar == '>')
+                {
+                    string s = currentChar.ToString();
+                    if (LookAhead(position, '='))
+                    {
+                        s += currentChar;
+                        Token token = new Token(TokenType.Operator, s);
+                        TokensList.Add(token);
+                        GetNextPosition();
+
+                    }
+                    else
+                    {
+                        Token token1 = new Token(TokenType.Operator, s);
+                        TokensList.Add(token1);
+                    }
+
+                }
+                //  verificar si es un simbolo de agrupacion o puntuacion
+                else if (currentChar == '(' || currentChar == ')' || currentChar == ',')
+                {
+                    Token token = new Token(TokenType.Punctuator, currentChar);
+                    TokensList.Add(token);
+                    GetNextPosition();
+
+                }
+                //verificar si es alguna palabra reservada del lenguaje 
+                else if (char.IsLetter(currentChar))
+                {
+
+
+                    string value = IsAWord();
+                    if (IsAKeyword(value) == true)
+                    {
+                        if (value == "true" || value == "false")
+                        {
+                            Token token1 = new Token(TokenType.KeyWord_Boolean, value);
+                            TokensList.Add(token1);
+                        }
+
+                        Token token = new Token(TokenType.KeyWords, value);
+                        TokensList.Add(token);
+
+                    }
+                    else
+                    {
+                        Token token = new Token(TokenType.Identifier, value);
+                        TokensList.Add(token);
+
+                    }
+
+                }
+                else if (currentChar == '_')
+                {
+                    string value1 = IsAWord();
+                    Token token = new Token(TokenType.Identifier, value1);
+
+                }
+                //verificar si la entada contiene algun texto y si es asi , crear un token tipo texto y agregarlo a la lista de tokens
+                else if (currentChar == '"') TokensList.Add(IsAString());
+                else if (currentChar == ';')
+                {
+                    TokensList.Add(new Token(TokenType.EndOfLine, currentChar));
                     GetNextPosition();
                 }
-                if (char.IsLetter(currentChar)) System.Console.WriteLine("error de lexico");
-                Token token = new Token(TokenType.Number, double.Parse(number));
-                TokensList.Add(token);
+                else Error("Lexical Error : token " + currentChar + " no valido");//aqui debe de saltar una excepcion
 
-            }//Verificar los operadores
-            else if (currentChar == '+' || currentChar == '-' || currentChar == '*' || currentChar == '/' || currentChar == '=' || currentChar == '@' || currentChar == '^')
+            }
+            TokensList.Add(new Token(TokenType.EndOfToken, "EOT"));
+        }
+
+        private void SkipWhiteSpaces()
+        {
+            while (position < text.Length && char.IsWhiteSpace(currentChar))
             {
-                Token token = new Token(TokenType.Operator, currentChar);
-                TokensList.Add(token);
+                GetNextPosition();
+            }
+        }
+
+
+        private bool IsAKeyword(string s)
+        {
+            List<string> Id = new() { "function", "let", "in", "if", "else", "true", "false","sqrt","cos","sin","exp","log","rand", "print" };
+            if (Id.Contains(s)) return true;
+            return false;
+        }
+        private string IsAWord()
+        {
+            string s = "";
+            while (position < text.Length && (char.IsLetterOrDigit(currentChar) || currentChar == '_'))
+            {
+                s += currentChar;
                 GetNextPosition();
 
             }
-            //  verificar si es un simbolo de agrupacion o puntuacion
-            else if (currentChar == '(' || currentChar == ')' || currentChar == ';' || currentChar == ',' || currentChar == '{' || currentChar == '}')
+            return s;
+        }
+        private Token IsAString()
+        {
+            GetNextPosition();
+            string s = "";
+            while (position < text.Length && currentChar != '"')
             {
-                Token token = new Token(TokenType.Punctuator, currentChar);
-                TokensList.Add(token);
+                s += currentChar;
                 GetNextPosition();
+            }
 
-            }//verificar si es alguna palabra reservada del lenguaje 
-            else if (char.IsLetter(currentChar))
+            if (currentChar != '"')
             {
-
-
-                string value = IsAWord();
-                if (IsAKeyword(value) == true)
-                {
-                    Token token = new Token(TokenType.KeyWords, value);
-                    TokensList.Add(token);
-
-                }
-                else
-                {
-                    Token token = new Token(TokenType.Identifier, value);
-                    TokensList.Add(token);
-                    position++;
-                }
+                Error("Se esperaba para concluir " + '"');
 
             }
-            else if (currentChar == '_')
+            GetNextPosition();
+
+            return new Token(TokenType.Text, s);
+        }
+        //Este metodo es para aumentar la posicion y actualizar el currentChar con la posicion 
+        private void GetNextPosition()
+        {
+            position++;
+            if (position < text.Length)
             {
-                string value = IsAWord();
-                Token token = new Token(TokenType.Identifier, value);
-
+                currentChar = text[position];
             }
-            //verificar si la entada contiene algun texto y si es asi , crear un token tipo texto y agregarlo a la lista de tokens
-            else if (currentChar == '"') TokensList.Add(IsAString());
+        }
+        private bool CanLookAhead(int next_positions)
+        {
+            int nextPos = position + next_positions;
+            if (nextPos < text.Length)
+            {
+                return true;
+            }
+            return false;
+        }
+        private void LookAhead(int next_positions)
+        {
+            int nextPos = position + next_positions;
+            if (CanLookAhead(next_positions))
+            {
+                currentChar = text[nextPos];
+            }
+            else currentChar = text[currentChar];
 
         }
-        TokensList.Add(new Token(TokenType.EndOfLine, null!));
-    }
 
-
-
-    private bool IsAKeyword(string s)
-    {
-        List<string> Id = new() { "function", "let", "in", "if ", "else", "true", "false" };
-        if (Id.Contains(s)) return true;
-        return false;
-    }
-    private string IsAWord()
-    {
-        string s = "";
-        while (position < text.Length && (char.IsLetterOrDigit(currentChar) || currentChar == '_'))
+        private bool LookAhead(int position, params char[] c)
+        //este metodo recibe la posicion en la que estoy y los parametros con los que construyo un array para 
         {
-            s += currentChar;
             GetNextPosition();
-
+            if (this.position != position && this.position < text.Length)
+            {
+                foreach (var item in c)
+                {
+                    if (currentChar == item)
+                    {
+                        System.Console.WriteLine(this.position);
+                        System.Console.WriteLine(position);
+                        return true;
+                    }
+                }
+            }
+            return false;
         }
-        return s;
-    }
-    private Token IsAString()
-    {
-        GetNextPosition();
-        string s = "";
-        while (position < text.Length && currentChar != '"')
+        private void Error(string mensaje)
         {
-            s += currentChar;
-            GetNextPosition();
+            throw new Exception("Lexical Error : " + mensaje);
         }
 
-        if (currentChar != '"')
-        {
-            System.Console.WriteLine("error lexico ");
-
-        }
-        GetNextPosition();
-
-        return new Token(TokenType.Text, s);
     }
-    //Este metodo es para aumentar la posicion y actualizar el currentChar con la posicion 
-    private void GetNextPosition()
-    {
-          position++;
-        if (position < text.Length)
-        {
-            currentChar = text[position];
-        }
-    }
-
-
-
-
-
 }

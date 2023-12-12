@@ -3,32 +3,35 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-
-public class Token
+namespace Hulk_Interpreter
 {
-    public TokenType Type;
-    public object Value;
-
-    public Token(TokenType type, object value)
+    public class Token
     {
-        Type = type;
-        Value = value;
+        public TokenType Type;
+        public object Value;
+
+        public Token(TokenType type, object value)
+        {
+            this.Type = type;
+            this.Value = value;
+        }
+
+
+        public new TokenType GetType()
+        {
+            return Type;
+        }
+
+        public object GetValue() => Value;
+
+        public void Show()
+        {
+            System.Console.WriteLine("(" + Type + "," + Value + ")");
+        }
+
+        public override string ToString()
+        {
+            return $"Token({Type}, {Value})";
+        }
     }
-
-
-    public TokenType GetType() => Type;
-    public object GetValue() => Value;
-
-    public void Show()
-    {
-        System.Console.WriteLine("(" + Type + "," + Value + ")");
-    }
-
-    public override string ToString()
-    {
-        return $"Token({Type}, {Value})";
-    }
-
 }
-
-
