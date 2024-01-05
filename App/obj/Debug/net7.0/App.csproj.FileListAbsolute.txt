@@ -1,0 +1,72 @@
+/home/alex/Desktop/hulk_daniela/App/bin/Debug/net7.0/App
+/home/alex/Desktop/hulk_daniela/App/bin/Debug/net7.0/App.deps.json
+/home/alex/Desktop/hulk_daniela/App/bin/Debug/net7.0/App.runtimeconfig.json
+/home/alex/Desktop/hulk_daniela/App/bin/Debug/net7.0/App.dll
+/home/alex/Desktop/hulk_daniela/App/bin/Debug/net7.0/App.pdb
+/home/alex/Desktop/hulk_daniela/App/bin/Debug/net7.0/ClassLibrary.dll
+/home/alex/Desktop/hulk_daniela/App/bin/Debug/net7.0/ClassLibrary.pdb
+/home/alex/Desktop/hulk_daniela/App/obj/Debug/net7.0/App.csproj.AssemblyReference.cache
+/home/alex/Desktop/hulk_daniela/App/obj/Debug/net7.0/App.GeneratedMSBuildEditorConfig.editorconfig
+/home/alex/Desktop/hulk_daniela/App/obj/Debug/net7.0/App.AssemblyInfoInputs.cache
+/home/alex/Desktop/hulk_daniela/App/obj/Debug/net7.0/App.AssemblyInfo.cs
+/home/alex/Desktop/hulk_daniela/App/obj/Debug/net7.0/App.csproj.CoreCompileInputs.cache
+/home/alex/Desktop/hulk_daniela/App/obj/Debug/net7.0/App.csproj.CopyComplete
+/home/alex/Desktop/hulk_daniela/App/obj/Debug/net7.0/App.dll
+/home/alex/Desktop/hulk_daniela/App/obj/Debug/net7.0/refint/App.dll
+/home/alex/Desktop/hulk_daniela/App/obj/Debug/net7.0/App.pdb
+/home/alex/Desktop/hulk_daniela/App/obj/Debug/net7.0/App.genruntimeconfig.cache
+/home/alex/Desktop/hulk_daniela/App/obj/Debug/net7.0/ref/App.dll
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/App/bin/Debug/net7.0/App.exe
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/App/bin/Debug/net7.0/App.deps.json
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/App/bin/Debug/net7.0/App.runtimeconfig.json
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/App/bin/Debug/net7.0/App.dll
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/App/bin/Debug/net7.0/App.pdb
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/App/bin/Debug/net7.0/ClassLibrary.dll
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/App/bin/Debug/net7.0/ClassLibrary.pdb
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/App/obj/Debug/net7.0/App.csproj.AssemblyReference.cache
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/App/obj/Debug/net7.0/App.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/App/obj/Debug/net7.0/App.AssemblyInfoInputs.cache
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/App/obj/Debug/net7.0/App.AssemblyInfo.cs
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/App/obj/Debug/net7.0/App.csproj.CoreCompileInputs.cache
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/App/obj/Debug/net7.0/App.csproj.CopyComplete
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/App/obj/Debug/net7.0/App.dll
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/App/obj/Debug/net7.0/refint/App.dll
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/App/obj/Debug/net7.0/App.pdb
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/App/obj/Debug/net7.0/App.genruntimeconfig.cache
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/App/obj/Debug/net7.0/ref/App.dll
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/App/bin/Debug/net7.0/App
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/App/bin/Debug/net7.0/App.deps.json
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/App/bin/Debug/net7.0/App.runtimeconfig.json
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/App/bin/Debug/net7.0/App.dll
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/App/bin/Debug/net7.0/App.pdb
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/App/bin/Debug/net7.0/ClassLibrary.dll
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/App/bin/Debug/net7.0/ClassLibrary.pdb
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/App/obj/Debug/net7.0/App.csproj.AssemblyReference.cache
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/App/obj/Debug/net7.0/App.GeneratedMSBuildEditorConfig.editorconfig
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/App/obj/Debug/net7.0/App.AssemblyInfoInputs.cache
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/App/obj/Debug/net7.0/App.AssemblyInfo.cs
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/App/obj/Debug/net7.0/App.csproj.CoreCompileInputs.cache
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/App/obj/Debug/net7.0/App.csproj.CopyComplete
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/App/obj/Debug/net7.0/App.dll
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/App/obj/Debug/net7.0/refint/App.dll
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/App/obj/Debug/net7.0/App.pdb
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/App/obj/Debug/net7.0/App.genruntimeconfig.cache
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/App/obj/Debug/net7.0/ref/App.dll
+D:\hulk_danielaNuevo\App\bin\Debug\net7.0\App.exe
+D:\hulk_danielaNuevo\App\bin\Debug\net7.0\App.deps.json
+D:\hulk_danielaNuevo\App\bin\Debug\net7.0\App.runtimeconfig.json
+D:\hulk_danielaNuevo\App\bin\Debug\net7.0\App.dll
+D:\hulk_danielaNuevo\App\bin\Debug\net7.0\App.pdb
+D:\hulk_danielaNuevo\App\bin\Debug\net7.0\ClassLibrary.dll
+D:\hulk_danielaNuevo\App\bin\Debug\net7.0\ClassLibrary.pdb
+D:\hulk_danielaNuevo\App\obj\Debug\net7.0\App.csproj.AssemblyReference.cache
+D:\hulk_danielaNuevo\App\obj\Debug\net7.0\App.GeneratedMSBuildEditorConfig.editorconfig
+D:\hulk_danielaNuevo\App\obj\Debug\net7.0\App.AssemblyInfoInputs.cache
+D:\hulk_danielaNuevo\App\obj\Debug\net7.0\App.AssemblyInfo.cs
+D:\hulk_danielaNuevo\App\obj\Debug\net7.0\App.csproj.CoreCompileInputs.cache
+D:\hulk_danielaNuevo\App\obj\Debug\net7.0\App.csproj.CopyComplete
+D:\hulk_danielaNuevo\App\obj\Debug\net7.0\App.dll
+D:\hulk_danielaNuevo\App\obj\Debug\net7.0\refint\App.dll
+D:\hulk_danielaNuevo\App\obj\Debug\net7.0\App.pdb
+D:\hulk_danielaNuevo\App\obj\Debug\net7.0\App.genruntimeconfig.cache
+D:\hulk_danielaNuevo\App\obj\Debug\net7.0\ref\App.dll

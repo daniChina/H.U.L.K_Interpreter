@@ -1,0 +1,46 @@
+/home/alex/Desktop/hulk_daniela/ClassLibrary/bin/Debug/net7.0/ClassLibrary.deps.json
+/home/alex/Desktop/hulk_daniela/ClassLibrary/bin/Debug/net7.0/ClassLibrary.dll
+/home/alex/Desktop/hulk_daniela/ClassLibrary/bin/Debug/net7.0/ClassLibrary.pdb
+/home/alex/Desktop/hulk_daniela/ClassLibrary/obj/Debug/net7.0/ClassLibrary.csproj.AssemblyReference.cache
+/home/alex/Desktop/hulk_daniela/ClassLibrary/obj/Debug/net7.0/ClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/home/alex/Desktop/hulk_daniela/ClassLibrary/obj/Debug/net7.0/ClassLibrary.AssemblyInfoInputs.cache
+/home/alex/Desktop/hulk_daniela/ClassLibrary/obj/Debug/net7.0/ClassLibrary.AssemblyInfo.cs
+/home/alex/Desktop/hulk_daniela/ClassLibrary/obj/Debug/net7.0/ClassLibrary.csproj.CoreCompileInputs.cache
+/home/alex/Desktop/hulk_daniela/ClassLibrary/obj/Debug/net7.0/ClassLibrary.dll
+/home/alex/Desktop/hulk_daniela/ClassLibrary/obj/Debug/net7.0/refint/ClassLibrary.dll
+/home/alex/Desktop/hulk_daniela/ClassLibrary/obj/Debug/net7.0/ClassLibrary.pdb
+/home/alex/Desktop/hulk_daniela/ClassLibrary/obj/Debug/net7.0/ref/ClassLibrary.dll
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/ClassLibrary/bin/Debug/net7.0/ClassLibrary.deps.json
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/ClassLibrary/bin/Debug/net7.0/ClassLibrary.dll
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/ClassLibrary/bin/Debug/net7.0/ClassLibrary.pdb
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/ClassLibrary/obj/Debug/net7.0/ClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/ClassLibrary/obj/Debug/net7.0/ClassLibrary.AssemblyInfoInputs.cache
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/ClassLibrary/obj/Debug/net7.0/ClassLibrary.AssemblyInfo.cs
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/ClassLibrary/obj/Debug/net7.0/ClassLibrary.csproj.CoreCompileInputs.cache
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/ClassLibrary/obj/Debug/net7.0/ClassLibrary.dll
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/ClassLibrary/obj/Debug/net7.0/refint/ClassLibrary.dll
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/ClassLibrary/obj/Debug/net7.0/ClassLibrary.pdb
+C:/Users/Daniela/Downloads/Telegram Desktop/hulk_daniela/ClassLibrary/obj/Debug/net7.0/ref/ClassLibrary.dll
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/ClassLibrary/bin/Debug/net7.0/ClassLibrary.deps.json
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/ClassLibrary/bin/Debug/net7.0/ClassLibrary.dll
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/ClassLibrary/bin/Debug/net7.0/ClassLibrary.pdb
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/ClassLibrary/obj/Debug/net7.0/ClassLibrary.csproj.AssemblyReference.cache
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/ClassLibrary/obj/Debug/net7.0/ClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/ClassLibrary/obj/Debug/net7.0/ClassLibrary.AssemblyInfoInputs.cache
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/ClassLibrary/obj/Debug/net7.0/ClassLibrary.AssemblyInfo.cs
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/ClassLibrary/obj/Debug/net7.0/ClassLibrary.csproj.CoreCompileInputs.cache
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/ClassLibrary/obj/Debug/net7.0/ClassLibrary.dll
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/ClassLibrary/obj/Debug/net7.0/refint/ClassLibrary.dll
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/ClassLibrary/obj/Debug/net7.0/ClassLibrary.pdb
+/home/amalia/Documents/hulk de daniela/hulk_danielaNuevo/ClassLibrary/obj/Debug/net7.0/ref/ClassLibrary.dll
+D:\hulk_danielaNuevo\ClassLibrary\bin\Debug\net7.0\ClassLibrary.deps.json
+D:\hulk_danielaNuevo\ClassLibrary\bin\Debug\net7.0\ClassLibrary.dll
+D:\hulk_danielaNuevo\ClassLibrary\bin\Debug\net7.0\ClassLibrary.pdb
+D:\hulk_danielaNuevo\ClassLibrary\obj\Debug\net7.0\ClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\hulk_danielaNuevo\ClassLibrary\obj\Debug\net7.0\ClassLibrary.AssemblyInfoInputs.cache
+D:\hulk_danielaNuevo\ClassLibrary\obj\Debug\net7.0\ClassLibrary.AssemblyInfo.cs
+D:\hulk_danielaNuevo\ClassLibrary\obj\Debug\net7.0\ClassLibrary.csproj.CoreCompileInputs.cache
+D:\hulk_danielaNuevo\ClassLibrary\obj\Debug\net7.0\ClassLibrary.dll
+D:\hulk_danielaNuevo\ClassLibrary\obj\Debug\net7.0\refint\ClassLibrary.dll
+D:\hulk_danielaNuevo\ClassLibrary\obj\Debug\net7.0\ClassLibrary.pdb
+D:\hulk_danielaNuevo\ClassLibrary\obj\Debug\net7.0\ref\ClassLibrary.dll
