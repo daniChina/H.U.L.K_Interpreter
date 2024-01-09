@@ -2,7 +2,7 @@ namespace ClassLibrary;
 public partial class Parser
 {
     public object ParseBaseExp()
-    //aqui analizo las expresiones mas basicas 
+    //aqui parseo las expresiones mas basicas 
     {
         object result = null!;
 
@@ -31,16 +31,19 @@ public partial class Parser
 
             case TokenType.IfKeyWord:
                 result = ParseIfElseExpression();
-                // foreach (var match in IfElseMatches)
-                //     if (match.Item1 == -1)
-                //     {
-                //         tokenIndex = match.Item2;
-                //         currentToken = tokenList[tokenIndex];
-                //     }
                 break;
 
             case TokenType.LetKeyWord:
                 result = ParseLetInExpression();
+                break;
+
+            case TokenType.Not:
+                Eat(TokenType.Not);
+                result = ParseExpression();
+                if (result is Boolean){
+                    bool resultado = !(bool)result;
+                    return resultado ; 
+                }
                 break;
 
             case TokenType.Identifier:
@@ -56,6 +59,11 @@ public partial class Parser
                 // Existe la variable ???
                 string identifierName = currentToken.GetName();
                 Eat(TokenType.Identifier);
+                if (identifierName == "PI")
+                {
+                    result = Math.PI;
+                    break;
+                }
 
                 if (Scope[counter - 1].ContainsKey(identifierName))
                 {
@@ -64,13 +72,7 @@ public partial class Parser
                 }
 
                 break;
-
-                /* PendienteEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
-                // case TokenType.Not:
-                //     Eat(TokenType.Not);
-                //     result = ParseExpression();
-                //     if (result != TokenType.KeyWord_Boolean) Error("Se esperaba una expresion de tipo bool");
-                //     break;
+                
         }
         return result;
     }
@@ -102,71 +104,6 @@ public partial class Parser
         return ifResult;
     }
 
-
-
-    // public void FunctionDeclaration()//este metodo lo voy a llamar si el token en el que estoy tiene como value la palabra function
-    // {
-    //     Eat(TokenType.KeyWords);
-
-    //     if (currentToken.Type != TokenType.Identifier) Error("La funcion debe tener un nombre para ser declarada");
-    //     string name = currentToken.Value.ToString()!;
-    //     Eat(TokenType.Identifier);
-
-    //     if (currentToken.Value.ToString() != "(") Error("La funcion debe tener los parametros entre parentesis");
-    //     Eat(TokenType.Punctuator);
-
-    //     while (currentToken.Value.ToString() != ")")
-    //     {
-
-    //         if (currentToken.Type != TokenType.Identifier) Error("Se esperaba un identificador");
-
-    //         if (FunctionParameters.Contains(currentToken)) Error("No se pueden pasar parametros con el mismo nombre");
-    //         FunctionParameters.Add(currentToken);
-
-    //         Eat(TokenType.Identifier);
-
-    //         while (currentToken.Value.ToString() == ",")
-    //         {
-    //             Eat(TokenType.Punctuator);
-    //             if (currentToken.Type != TokenType.Identifier) Error("Se esperaba un identificador");
-
-    //             if (FunctionParameters.Contains(currentToken)) Error("No se pueden pasar parametros con el mismo nombre");
-    //             FunctionParameters.Add(currentToken);
-
-    //             Eat(TokenType.Identifier);
-    //         }
-    //     }
-
-    //     if (currentToken.Value.ToString() != ")") Error("Se esperaba )");
-    //     Eat(TokenType.Punctuator);
-
-
-    //     if (currentToken.Value.ToString() != "=>") Error("El operador para declarar funciones tiene que ser =>");
-    //     Eat(TokenType.Operator);
-
-    //     while (currentToken.Type != TokenType.EndOfLine)
-    //     {
-    //         FunctionBody.Add(currentToken);
-    //         GetNextToken();
-    //     }
-
-    //     if (currentToken.Type != TokenType.EndOfLine) Error("Toda expresion tiene que terminar con ;");
-    //     FunctionBody.Add(currentToken);
-    //     Eat(TokenType.EndOfLine);
-
-    //     if (currentToken.Type != TokenType.EndOfToken) Error("Despues del ; no puede haber ninguna expresion ");
-    //     FunctionBody.Add(currentToken);
-    //     Eat(TokenType.EndOfToken);
-
-    //     Function function = new Function(name, FunctionParameters, FunctionBody, TokenType.Null);//en principio el tipo de retorno es null porque no se cual es 
-    //     AddFunction(function);
-    // }
-    // public void AddFunction(Function function)
-    // {
-    //     if (FuncionesDeclaradas.ContainsKey(function.Name)) Error("No se puede agregar la funcion, ya existe otra con el mismo nombre");
-    //     FuncionesDeclaradas.Add(function.Name, function);
-
-    // }
 
     public object ParseLetInExpression()
     {

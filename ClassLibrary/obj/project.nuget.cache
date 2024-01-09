@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "vHUh4vsUK+gh5PVeDI/Vu8i0bpgiiFv+er8c7IaTbncVJt9YRmRYSdPk1wxNNcmTQNWLI492iAXKBZUF0Xf1/A==",
+  "dgSpecHash": "wYt8S1Nafy3hitfzoMB0C1Fns3ysnHD977+e9glZ1YTB0mtKFek1aR2c9+Ux55gCSM0ZiUj1di9oSKQTaS1fww==",
   "success": true,
-  "projectFilePath": "D:\\hulk_danielaNuevo\\ClassLibrary\\ClassLibrary.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\ClassLibrary\\ClassLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Daniela\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Daniela\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Daniela\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
+  ],
   "logs": []
 }

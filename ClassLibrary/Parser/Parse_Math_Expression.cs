@@ -81,7 +81,7 @@ public partial class Parser
     }
 
 
-    public object ParseMathExpressionLv3()//aqui voy a revisar sintacticamente si los tokens son numericos para poder evaluar en la expresion con el operador de potencia
+    public object ParseMathExpressionLv3()//Pow
     {
         object result = ParseBaseExp();
 

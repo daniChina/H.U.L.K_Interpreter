@@ -24,6 +24,7 @@ public partial class SyntaxAnalyzer
 
     public void CheckArguments(string functionName)
     {
+        List<string> GlobalFunctionName =  new List<string> {"sin","cos","log","exp","sqrt","print"};
         Eat(TokenType.LeftParenthesis);
         List<TokenType> args = new List<TokenType>();
         args.Add(AnalyzeExpression());
@@ -33,9 +34,21 @@ public partial class SyntaxAnalyzer
             Eat(TokenType.Comma);
             args.Add(AnalyzeExpression());
         }
+        foreach (var item in GlobalFunctionName)
+        {
+            if (functionName == item){
+
+                if (args.Count != 1) {
+                    Error ($"La funcion {functionName} recibe {1} argumento y solo {args.Count} fueron dados.");
+                }
+                return;
+            } 
+        }
         
-        if (Global.Functions[functionName].Arguments.Count != args.Count)
+        
+        if (Global.Functions[functionName].Arguments.Count != args.Count){
             Error($"La funcion {functionName} recibe {Global.Functions[functionName].Arguments.Count} argumentos y solo {args.Count} fueron dados.");
+        }
     }
 
 

@@ -9,7 +9,6 @@ public partial class Parser
     public List<(int, int)> IfElseMatches;
     List<Token> tokenList = new List<Token>();
     List<Dictionary<string, object>> Scope = new List<Dictionary<string, object>>();
-    // Dictionary<string, Function> FuncionesDeclaradas = new Dictionary<string, Function>();
 
     public Parser(List<Token> TokenList, List<Dictionary<string, object>> scope)
     {
@@ -22,39 +21,7 @@ public partial class Parser
     }
 
 
-    // public SyntaxAnalyzer(List<Token> TokenList, Dictionary<string, TokenType> Variables, Dictionary<string, Function> Functions)
-    // {
-    //     //Este constructor solo se utiliza en el casos en que voy a procesar la funcion, 
-    //     //que necesito que reciba las variables,
-    //     // las funciones que existen, y 
-    //     tokenList = TokenList;
-    //     position = 0;
-    //     int size = TokenList.Count();
-    //     Scope = new List<Dictionary<string, TokenType>>();
-    //     EstoyAnalizando = AreAllNul();//Para saber que en este caso estoy analizando la funcion
-
-    //     Scope.Add(Variables);
-    //     int variable_subset = 0;
-    //     FuncionesDeclaradas = Functions;
-    //     if (position != size)
-    //     {
-    //         currentToken = tokenList[position];
-    //     }
-    //     else
-    //     {
-    //         currentToken = null;
-    //     }
-    //     bool AreAllNul()
-    //     {
-    //         foreach (var item in Variables)
-    //         {
-    //             if (item.Value == TokenType.Null) return true;
-    //         }
-
-    //         return false;
-    //     }
-    // }
-
+   
     private void Eat(TokenType type)
     {
         if (currentToken.Type == type)

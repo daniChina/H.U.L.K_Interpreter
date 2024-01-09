@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\hulk_danielaNuevo\\App\\App.csproj": {}
+    "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\App\\App.csproj": {}
   },
   "projects": {
-    "D:\\hulk_danielaNuevo\\App\\App.csproj": {
+    "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\App\\App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\hulk_danielaNuevo\\App\\App.csproj",
+        "projectUniqueName": "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\App\\App.csproj",
         "projectName": "App",
-        "projectPath": "D:\\hulk_danielaNuevo\\App\\App.csproj",
+        "projectPath": "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\App\\App.csproj",
         "packagesPath": "C:\\Users\\Daniela\\.nuget\\packages\\",
-        "outputPath": "D:\\hulk_danielaNuevo\\App\\obj\\",
+        "outputPath": "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\App\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Daniela\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\hulk_danielaNuevo\\ClassLibrary\\ClassLibrary.csproj": {
-                "projectPath": "D:\\hulk_danielaNuevo\\ClassLibrary\\ClassLibrary.csproj"
+              "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\ClassLibrary\\ClassLibrary.csproj": {
+                "projectPath": "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\ClassLibrary\\ClassLibrary.csproj"
               }
             }
           }
@@ -52,23 +52,41 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\hulk_danielaNuevo\\ClassLibrary\\ClassLibrary.csproj": {
+    "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\ClassLibrary\\ClassLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\hulk_danielaNuevo\\ClassLibrary\\ClassLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\ClassLibrary\\ClassLibrary.csproj",
         "projectName": "ClassLibrary",
-        "projectPath": "D:\\hulk_danielaNuevo\\ClassLibrary\\ClassLibrary.csproj",
+        "projectPath": "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\ClassLibrary\\ClassLibrary.csproj",
         "packagesPath": "C:\\Users\\Daniela\\.nuget\\packages\\",
-        "outputPath": "D:\\hulk_danielaNuevo\\ClassLibrary\\obj\\",
+        "outputPath": "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\ClassLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Daniela\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -105,12 +123,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

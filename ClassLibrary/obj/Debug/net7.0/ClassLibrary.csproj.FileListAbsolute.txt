@@ -44,3 +44,14 @@ D:\hulk_danielaNuevo\ClassLibrary\obj\Debug\net7.0\ClassLibrary.dll
 D:\hulk_danielaNuevo\ClassLibrary\obj\Debug\net7.0\refint\ClassLibrary.dll
 D:\hulk_danielaNuevo\ClassLibrary\obj\Debug\net7.0\ClassLibrary.pdb
 D:\hulk_danielaNuevo\ClassLibrary\obj\Debug\net7.0\ref\ClassLibrary.dll
+C:\Users\Daniela\Downloads\H.U.L.K_Interpreter-master\ClassLibrary\bin\Debug\net7.0\ClassLibrary.deps.json
+C:\Users\Daniela\Downloads\H.U.L.K_Interpreter-master\ClassLibrary\bin\Debug\net7.0\ClassLibrary.dll
+C:\Users\Daniela\Downloads\H.U.L.K_Interpreter-master\ClassLibrary\bin\Debug\net7.0\ClassLibrary.pdb
+C:\Users\Daniela\Downloads\H.U.L.K_Interpreter-master\ClassLibrary\obj\Debug\net7.0\ClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniela\Downloads\H.U.L.K_Interpreter-master\ClassLibrary\obj\Debug\net7.0\ClassLibrary.AssemblyInfoInputs.cache
+C:\Users\Daniela\Downloads\H.U.L.K_Interpreter-master\ClassLibrary\obj\Debug\net7.0\ClassLibrary.AssemblyInfo.cs
+C:\Users\Daniela\Downloads\H.U.L.K_Interpreter-master\ClassLibrary\obj\Debug\net7.0\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Daniela\Downloads\H.U.L.K_Interpreter-master\ClassLibrary\obj\Debug\net7.0\ClassLibrary.dll
+C:\Users\Daniela\Downloads\H.U.L.K_Interpreter-master\ClassLibrary\obj\Debug\net7.0\refint\ClassLibrary.dll
+C:\Users\Daniela\Downloads\H.U.L.K_Interpreter-master\ClassLibrary\obj\Debug\net7.0\ClassLibrary.pdb
+C:\Users\Daniela\Downloads\H.U.L.K_Interpreter-master\ClassLibrary\obj\Debug\net7.0\ref\ClassLibrary.dll

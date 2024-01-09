@@ -23,6 +23,15 @@ public partial class SyntaxAnalyzer
                 result = TokenType.Bool;
                 break;
 
+            case TokenType.Not:
+                Eat(TokenType.Not);
+                result = AnalyzeExpression();
+                if (result is not TokenType.Bool)
+                {
+                    Error("El operador ! solo se puede aplicar a tipos bool");
+                }
+                break;
+
             case TokenType.LeftParenthesis:
                 Eat(TokenType.LeftParenthesis);
                 result = AnalyzeExpression();
@@ -54,14 +63,18 @@ public partial class SyntaxAnalyzer
                 string identifierName = currentToken.GetName();
                 Eat(TokenType.Identifier);
                 bool flag = false;
-
-                if (Scope[counter].ContainsKey(identifierName))
+                if (identifierName == "PI")
+                {
+                    result = TokenType.Number;
+                    flag = true;
+                    break;
+                }
+                else if (Scope[counter].ContainsKey(identifierName))
                 {
                     result = Scope[counter][identifierName];
                     flag = true;
                     break;
                 }
-
 
                 if (!flag) Error($"La variable \"{identifierName}\" no existe en el contexto actual.");
                 Scope.Remove(Scope.Last());
@@ -71,20 +84,13 @@ public partial class SyntaxAnalyzer
                 System.Console.WriteLine($"Token inesperado: \"{currentToken}\".");
                 throw new Exception();
 
-                /* PendienteEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
-                // case TokenType.Not:
-                //     Eat(TokenType.Not);
-                //     result = AnalyzeExpression();
-                //     if (result != TokenType.KeyWord_Boolean) Error("Se esperaba una expresion de tipo bool");
-                //     break;
         }
         return result;
     }
 
     bool CheckNext(TokenType type)
     {
-        // System.Console.WriteLine("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-        // System.Console.WriteLine(tokenList[tokenIndex+1].Type);
+
         return tokenIndex < tokenList.Count - 1 && tokenList[tokenIndex + 1].Type == type;
     }
 
@@ -108,70 +114,6 @@ public partial class SyntaxAnalyzer
         if (ifExpression != elseExpression && ifExpression is not TokenType.Temporal && elseExpression is not TokenType.Temporal) Error("El tipo de retorno de una expresion if-else tiene que ser el mismo");
         return ifExpression;
     }
-
-    // public void FunctionDeclaration()//este metodo lo voy a llamar si el token en el que estoy tiene como value la palabra function
-    // {
-    //     Eat(TokenType.KeyWords);
-
-    //     if (currentToken.Type != TokenType.Identifier) Error("La funcion debe tener un nombre para ser declarada");
-    //     string name = currentToken.Value.ToString()!;
-    //     Eat(TokenType.Identifier);
-
-    //     if (currentToken.Value.ToString() != "(") Error("La funcion debe tener los parametros entre parentesis");
-    //     Eat(TokenType.Punctuator);
-
-    //     while (currentToken.Value.ToString() != ")")
-    //     {
-
-    //         if (currentToken.Type != TokenType.Identifier) Error("Se esperaba un identificador");
-
-    //         if (FunctionParameters.Contains(currentToken)) Error("No se pueden pasar parametros con el mismo nombre");
-    //         FunctionParameters.Add(currentToken);
-
-    //         Eat(TokenType.Identifier);
-
-    //         while (currentToken.Value.ToString() == ",")
-    //         {
-    //             Eat(TokenType.Punctuator);
-    //             if (currentToken.Type != TokenType.Identifier) Error("Se esperaba un identificador");
-
-    //             if (FunctionParameters.Contains(currentToken)) Error("No se pueden pasar parametros con el mismo nombre");
-    //             FunctionParameters.Add(currentToken);
-
-    //             Eat(TokenType.Identifier);
-    //         }
-    //     }
-
-    //     if (currentToken.Value.ToString() != ")") Error("Se esperaba )");
-    //     Eat(TokenType.Punctuator);
-
-
-    //     if (currentToken.Value.ToString() != "=>") Error("El operador para declarar funciones tiene que ser =>");
-    //     Eat(TokenType.Operator);
-
-    //     while (currentToken.Type != TokenType.EndOfLine)
-    //     {
-    //         FunctionBody.Add(currentToken);
-    //         GetNextToken();
-    //     }
-
-    //     if (currentToken.Type != TokenType.EndOfLine) Error("Toda expresion tiene que terminar con ;");
-    //     FunctionBody.Add(currentToken);
-    //     Eat(TokenType.EndOfLine);
-
-    //     if (currentToken.Type != TokenType.EndOfToken) Error("Despues del ; no puede haber ninguna expresion ");
-    //     FunctionBody.Add(currentToken);
-    //     Eat(TokenType.EndOfToken);
-
-    //     Function function = new Function(name, FunctionParameters, FunctionBody, TokenType.Null);//en principio el tipo de retorno es null porque no se cual es 
-    //     AddFunction(function);
-    // }
-    // public void AddFunction(Function function)
-    // {
-    //     if (FuncionesDeclaradas.ContainsKey(function.Name)) Error("No se puede agregar la funcion, ya existe otra con el mismo nombre");
-    //     FuncionesDeclaradas.Add(function.Name, function);
-
-    // }
 
     public TokenType AnalyzeLetInExpression()
     {
