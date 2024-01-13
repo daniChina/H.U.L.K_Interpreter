@@ -29,7 +29,7 @@ public partial class SyntaxAnalyzer
         {
             GetNextToken();
         }
-        else Error($"Se esperaba \"{expectedToken}\" en la columna {tokenIndex}.");
+        else Error("Se esperaba el token +" + expectedToken);
     }
 
     private void GetNextToken()

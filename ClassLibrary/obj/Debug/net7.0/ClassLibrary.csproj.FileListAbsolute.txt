@@ -55,3 +55,14 @@ C:\Users\Daniela\Downloads\H.U.L.K_Interpreter-master\ClassLibrary\obj\Debug\net
 C:\Users\Daniela\Downloads\H.U.L.K_Interpreter-master\ClassLibrary\obj\Debug\net7.0\refint\ClassLibrary.dll
 C:\Users\Daniela\Downloads\H.U.L.K_Interpreter-master\ClassLibrary\obj\Debug\net7.0\ClassLibrary.pdb
 C:\Users\Daniela\Downloads\H.U.L.K_Interpreter-master\ClassLibrary\obj\Debug\net7.0\ref\ClassLibrary.dll
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\ClassLibrary\bin\Debug\net7.0\ClassLibrary.deps.json
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\ClassLibrary\bin\Debug\net7.0\ClassLibrary.dll
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\ClassLibrary\bin\Debug\net7.0\ClassLibrary.pdb
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\ClassLibrary\obj\Debug\net7.0\ClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\ClassLibrary\obj\Debug\net7.0\ClassLibrary.AssemblyInfoInputs.cache
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\ClassLibrary\obj\Debug\net7.0\ClassLibrary.AssemblyInfo.cs
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\ClassLibrary\obj\Debug\net7.0\ClassLibrary.csproj.CoreCompileInputs.cache
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\ClassLibrary\obj\Debug\net7.0\ClassLibrary.dll
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\ClassLibrary\obj\Debug\net7.0\refint\ClassLibrary.dll
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\ClassLibrary\obj\Debug\net7.0\ClassLibrary.pdb
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\ClassLibrary\obj\Debug\net7.0\ref\ClassLibrary.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\ClassLibrary\\ClassLibrary.csproj": {}
+    "D:\\Hulk 12 1\\H.U.L.K_Interpreter-master\\ClassLibrary\\ClassLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\ClassLibrary\\ClassLibrary.csproj": {
+    "D:\\Hulk 12 1\\H.U.L.K_Interpreter-master\\ClassLibrary\\ClassLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\ClassLibrary\\ClassLibrary.csproj",
+        "projectUniqueName": "D:\\Hulk 12 1\\H.U.L.K_Interpreter-master\\ClassLibrary\\ClassLibrary.csproj",
         "projectName": "ClassLibrary",
-        "projectPath": "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\ClassLibrary\\ClassLibrary.csproj",
+        "projectPath": "D:\\Hulk 12 1\\H.U.L.K_Interpreter-master\\ClassLibrary\\ClassLibrary.csproj",
         "packagesPath": "C:\\Users\\Daniela\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\ClassLibrary\\obj\\",
+        "outputPath": "D:\\Hulk 12 1\\H.U.L.K_Interpreter-master\\ClassLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Daniela\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -7,6 +7,7 @@ public partial class SyntaxAnalyzer
         if (currentToken.Type is TokenType.Concat)
         {
             Eat(TokenType.Concat);
+           TokenType rightSide = AnalyzeMathExpressionsLv1();
         }
         return text;
 

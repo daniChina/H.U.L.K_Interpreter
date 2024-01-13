@@ -40,9 +40,10 @@ public partial class Parser
             case TokenType.Not:
                 Eat(TokenType.Not);
                 result = ParseExpression();
-                if (result is Boolean){
+                if (result is Boolean)
+                {
                     bool resultado = !(bool)result;
-                    return resultado ; 
+                    return resultado;
                 }
                 break;
 
@@ -65,14 +66,14 @@ public partial class Parser
                     break;
                 }
 
-                if (Scope[counter - 1].ContainsKey(identifierName))
+               else if (Scope[counter - 1].ContainsKey(identifierName))
                 {
                     result = Scope[counter - 1][identifierName];
                     break;
                 }
 
                 break;
-                
+
         }
         return result;
     }
@@ -144,7 +145,7 @@ public partial class Parser
         Eat(TokenType.InKeyWord);
 
         object inExpr = ParseExpression();
-        Scope.RemoveAt(counter);
+        // Scope.RemoveAt(counter-1);
         counter--;
 
         return inExpr;

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wYt8S1Nafy3hitfzoMB0C1Fns3ysnHD977+e9glZ1YTB0mtKFek1aR2c9+Ux55gCSM0ZiUj1di9oSKQTaS1fww==",
+  "dgSpecHash": "el0HzMDR0M+gWbOop4PLcpSdIJSrmGaSqOiBS9elB1udgHsyzNXoTg0GnTH4XeNBt/GszbXfkQjtyWOc8mouDA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\ClassLibrary\\ClassLibrary.csproj",
+  "projectFilePath": "D:\\Hulk 12 1\\H.U.L.K_Interpreter-master\\ClassLibrary\\ClassLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Daniela\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
     "C:\\Users\\Daniela\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",

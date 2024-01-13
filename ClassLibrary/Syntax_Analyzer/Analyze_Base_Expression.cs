@@ -76,6 +76,7 @@ public partial class SyntaxAnalyzer
                     break;
                 }
 
+
                 if (!flag) Error($"La variable \"{identifierName}\" no existe en el contexto actual.");
                 Scope.Remove(Scope.Last());
                 break;
@@ -154,7 +155,7 @@ public partial class SyntaxAnalyzer
         Eat(TokenType.InKeyWord);
 
         TokenType inExpr = AnalyzeExpression();
-        Scope.RemoveAt(counter);
+        // Scope.RemoveAt(counter-1);
         counter--;
 
         return inExpr;

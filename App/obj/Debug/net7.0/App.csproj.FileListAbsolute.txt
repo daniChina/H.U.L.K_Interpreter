@@ -88,3 +88,21 @@ C:\Users\Daniela\Downloads\H.U.L.K_Interpreter-master\App\obj\Debug\net7.0\refin
 C:\Users\Daniela\Downloads\H.U.L.K_Interpreter-master\App\obj\Debug\net7.0\App.pdb
 C:\Users\Daniela\Downloads\H.U.L.K_Interpreter-master\App\obj\Debug\net7.0\App.genruntimeconfig.cache
 C:\Users\Daniela\Downloads\H.U.L.K_Interpreter-master\App\obj\Debug\net7.0\ref\App.dll
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\App\bin\Debug\net7.0\App.exe
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\App\bin\Debug\net7.0\App.deps.json
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\App\bin\Debug\net7.0\App.runtimeconfig.json
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\App\bin\Debug\net7.0\App.dll
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\App\bin\Debug\net7.0\App.pdb
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\App\bin\Debug\net7.0\ClassLibrary.dll
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\App\bin\Debug\net7.0\ClassLibrary.pdb
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\App\obj\Debug\net7.0\App.csproj.AssemblyReference.cache
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\App\obj\Debug\net7.0\App.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\App\obj\Debug\net7.0\App.AssemblyInfoInputs.cache
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\App\obj\Debug\net7.0\App.AssemblyInfo.cs
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\App\obj\Debug\net7.0\App.csproj.CoreCompileInputs.cache
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\App\obj\Debug\net7.0\App.csproj.CopyComplete
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\App\obj\Debug\net7.0\App.dll
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\App\obj\Debug\net7.0\refint\App.dll
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\App\obj\Debug\net7.0\App.pdb
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\App\obj\Debug\net7.0\App.genruntimeconfig.cache
+D:\Hulk 12 1\H.U.L.K_Interpreter-master\App\obj\Debug\net7.0\ref\App.dll

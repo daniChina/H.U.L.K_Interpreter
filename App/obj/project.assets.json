@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\App\\App.csproj",
+      "projectUniqueName": "D:\\Hulk 12 1\\H.U.L.K_Interpreter-master\\App\\App.csproj",
       "projectName": "App",
-      "projectPath": "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\App\\App.csproj",
+      "projectPath": "D:\\Hulk 12 1\\H.U.L.K_Interpreter-master\\App\\App.csproj",
       "packagesPath": "C:\\Users\\Daniela\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\App\\obj\\",
+      "outputPath": "D:\\Hulk 12 1\\H.U.L.K_Interpreter-master\\App\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Daniela\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -51,8 +51,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\ClassLibrary\\ClassLibrary.csproj": {
-              "projectPath": "C:\\Users\\Daniela\\Downloads\\H.U.L.K_Interpreter-master\\ClassLibrary\\ClassLibrary.csproj"
+            "D:\\Hulk 12 1\\H.U.L.K_Interpreter-master\\ClassLibrary\\ClassLibrary.csproj": {
+              "projectPath": "D:\\Hulk 12 1\\H.U.L.K_Interpreter-master\\ClassLibrary\\ClassLibrary.csproj"
             }
           }
         }

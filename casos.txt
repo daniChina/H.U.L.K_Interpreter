@@ -1,0 +1,2 @@
+let a = 42 in print(if(a % 2 == 0) "Even" else print "odd");
+en este caso como delante de print no hay un parentesis izquierdo , lo tomo como un identificador , por tanto no existe como funcion 
